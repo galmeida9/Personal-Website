@@ -1,0 +1,96 @@
+.slides {
+    display: none;  
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;    
+    height: 100%;
+    width: 100%;
+}
+
+.slideimages {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+}
+
+.image1 {
+    background-image: url(resources/photo_slideshow.jpg);    
+}
+
+.image2 {
+    background-image: url(resources/IST.jpg);    
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;  
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;    
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);    
+}
+
+.slidetext {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;   
+}
+
+.slidenumbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;    
+}
+
+.active {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;    
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.slidetext {font-size: 11px}
+}
