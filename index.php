@@ -105,7 +105,7 @@ body, html {
     <h3 class="w3-center">SOBRE MIM</h3>
     <p class="w3-center w3-large">Sou estudante de Engenharia Informática e de Computadores no Instituto Superior Técnico. </p>
     <h3 class="w3-center" style="padding-top: 25px">Biografia</h3>
-    <p class="w3-center w3-large">Nasci em 1999 e fiz a minha escolaridade obrigatória toda em Coimbra, no Colégio Apostólico da Imaculada Conceição, acabando com média de 18.</p>
+    <p class="w3-center w3-large">Nasci em 1999 e fiz a minha escolaridade obrigatória toda em Coimbra, no Colégio da Imaculada Conceição, acabando com média de 18.</p>
     <p class="w3-center w3-large">Desde pequeno que gostava de informática e com o tempo essa paixão foi ficando cada vez maior, tendo influência também da parte do meu pai. 
     Então, decidi-me aventurar e ir estudar em Lisboa, devido ao prestigio do IST, indo já no segundo ano da Licenciatura com média atual de 16,40. Sempre me fascinei e tive interesse em Inteligência Artificial, sendo por isso que estou a ponderar
   a tirar mestrado nessa área. Para desenvolver as minhas capacidades, tenho feito alguns projetos nos tempos livres, alguns dos quais disponíveis neste site. Atualmente gostaria imenso de participar
@@ -137,7 +137,6 @@ num estágio de verão para adquirir experiência.</p>
       </p>
       <p>Em Java tenho em baixo um pequeno projeto pessoal, o jogo 2048, com interface gráfica, feito por mim de raíz.</p>
       <button id="butaocv" style="margin-top:40px"><a href="resources/gabriel_cv.pdf" download style="text-decoration:none">MEU CV</a></button>
-      <p>(ainda por atualizar)</p>
     </div>
     <div class="w3-col m6">
       <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>C</p>
