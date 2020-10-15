@@ -4,7 +4,7 @@ body {
   counter-reset: css-counter 2016
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .mobile {
     display: block;
   }
@@ -54,7 +54,7 @@ body {
     color: #fff;
     font-size: 12pt;
     font-weight: bold;
-    line-height: 23pt;
+    line-height: 24pt;
   }
   .timeline p {
     border-right: 3px solid;
@@ -83,7 +83,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 800px) {
   .mobile {
     display: none;
   }
