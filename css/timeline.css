@@ -17,6 +17,7 @@ body {
     min-width: 150pt;
     max-width: 220pt;
     margin: auto;
+    text-align: center;
   }
 
   .timeline img {
