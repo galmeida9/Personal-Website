@@ -4,74 +4,163 @@ body {
   counter-reset: css-counter 2016
 }
 
-.timeline {
-  min-width: 200pt;
-  max-width: 550pt;
-  margin: auto;
+@media only screen and (max-width: 600px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+  
+  .timeline {
+    min-width: 150pt;
+    max-width: 220pt;
+    margin: auto;
+  }
+
+  .timeline img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .timeline p {
+    font-size: 1em;
+    line-height: 1.75em;
+    border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+    margin: 0;
+    padding: 40px;
+    counter-increment: css-counter;
+    position: relative;
+    color: #34435e;
+  }
+  
+  .skip2timeline {
+    counter-increment: css-counter 2 !important; 
+  }
+  
+  .timeline p:before {
+    content: counter(css-counter);
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 40pt;
+    width: 40pt;
+    background-color: #34435e;
+    text-align: center;
+    color: #fff;
+    font-size: 12pt;
+    font-weight: bold;
+    line-height: 23pt;
+  }
+  .timeline p {
+    border-right: 3px solid;
+    padding-left: 0;
+  }
+  .timeline p:before {
+    left: 100%;
+    margin-left: -25px;
+  }
+  .timeline p:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .timeline p:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .timeline b {
+    color: black;
+    font-size: 16pt;
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    color: #05364d;
+  }
 }
 
-.timeline p {
-  font-size: 1em;
-  line-height: 1.75em;
-  border-top: 3px solid;
-  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
-  border-image-slice: 1;
-  border-width: 3px;
-  margin: 0;
-  padding: 40px;
-  counter-increment: css-counter;
-  position: relative;
-  color: #34435e;
-}
+@media only screen and (min-width: 600px) {
+  .mobile {
+    display: none;
+  }
 
-.skip2timeline {
-  counter-increment: css-counter 2 !important; 
-}
+  .desktop {
+    display: block;
+  }
 
-.timeline p:before {
-  content: counter(css-counter);
-  position: absolute;
-  border-radius: 50%;
-  padding: 10px;
-  height: 40pt;
-  width: 40pt;
-  background-color: #34435e;
-  text-align: center;
-  color: #fff;
-  font-size: 12pt;
-  font-weight: bold;
-  line-height: 23pt;
-}
-.timeline p:nth-child(odd) {
-  border-right: 3px solid;
-  padding-left: 0;
-}
-.timeline p:nth-child(odd):before {
-  left: 100%;
-  margin-left: -20px;
-}
-.timeline p:nth-child(even) {
-  border-left: 3px solid;
-  padding-right: 0;
-}
-.timeline p:nth-child(even):before {
-  right: 100%;
-  margin-right: -20px;
-}
-.timeline p:first-child {
-  border-top: 0;
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-.timeline p:last-child {
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.timeline b {
-  color: black;
-  font-size: 16pt;
-  font-family: "Roboto",sans-serif;
-  font-weight: 700;
-  color: #05364d;
+  .timeline {
+    min-width: 150pt;
+    max-width: 550pt;
+    margin: auto;
+  }
+  
+  .timeline p {
+    font-size: 1em;
+    line-height: 1.75em;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+    border-image-slice: 1;
+    border-width: 3px;
+    margin: 0;
+    padding: 40px;
+    counter-increment: css-counter;
+    position: relative;
+    color: #34435e;
+  }
+  
+  .skip2timeline {
+    counter-increment: css-counter 2 !important; 
+  }
+  
+  .timeline p:before {
+    content: counter(css-counter);
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 40pt;
+    width: 40pt;
+    background-color: #34435e;
+    text-align: center;
+    color: #fff;
+    font-size: 12pt;
+    font-weight: bold;
+    line-height: 23pt;
+  }
+  .timeline p:nth-child(odd) {
+    border-right: 3px solid;
+    padding-left: 0;
+  }
+  .timeline p:nth-child(odd):before {
+    left: 100%;
+    margin-left: -20px;
+  }
+  .timeline p:nth-child(even) {
+    border-left: 3px solid;
+    padding-right: 0;
+  }
+  .timeline p:nth-child(even):before {
+    right: 100%;
+    margin-right: -20px;
+  }
+  .timeline p:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .timeline p:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  .timeline b {
+    color: black;
+    font-size: 16pt;
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    color: #05364d;
+  }
 }
