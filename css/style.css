@@ -4,7 +4,13 @@ body {
 	line-height: 27px;
 	font-weight: 300;
 	font-family: "Roboto", sans-serif;
-	color: #797979
+    color: #797979;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 h1,
