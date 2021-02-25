@@ -3,7 +3,6 @@
     grid-column-gap: 24px;
     grid-row-gap: 24px;
     grid-template-columns: repeat(auto-fit, minmax(100pt, 1fr));
-    pointer-events: none;
 }
 
 .skillGrid img {

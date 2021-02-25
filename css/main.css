@@ -294,6 +294,18 @@ button {
     }
   }
 
+.smallSection
+{
+    margin: 0px auto 16vh auto !important
+}
+
+@media only screen and (max-width: 768px) {
+    .smallSection
+    {
+        margin: 0 auto 8vh auto !important;
+    }
+}
+
 .content-area .content-area-inner section
 {
     max-width: 50%;
