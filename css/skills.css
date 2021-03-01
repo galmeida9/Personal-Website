@@ -22,3 +22,22 @@
         width: 80pt;
     }
 }
+
+.jpnBioContainer {
+    background-color: #1e1f22;
+    padding: 16pt;
+    border-radius: 20px;
+}
+
+.langBioSwitch {
+    text-align: end;
+}
+
+#jpnBtn {
+    margin-right: 6pt; 
+    color: grey;
+}
+
+#engBtn {
+    margin-right: 6pt; 
+}

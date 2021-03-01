@@ -172,39 +172,37 @@
 					I am at least JLPT N4 level.
 				</p>
 				<p class="scroll-animated"> Bellow is a short text I made about myself:</p>
-				<div id="japaneseBio" class="scroll-animated" style="font-size: 14pt; display: block;">
-					<p> おはようございます！</p>
-					<p> ガブリエルと言います, そして二十一歳で、ポルトガル人です。今大学四年生で、ISTで勉強します。コインブラに生まれまして、そこの近くの小さな村に住んでいます。ご両親と兄弟に住んでいます。
-					</p>
-					<p> 好きな食べ物はラーメンで好きなスポつはバレーボールです、そして好、きな映画は声の形です。その映画はとても美しい、一番映画です。</p>
-					<p> 二年前には日本語を一人で勉強はじめました。毎日、三十分に日本語を勉強します。少し難しいです、でも毎日頑張ります。日本が大好きから、僕の夢はそこで働きます。</p>
-					<p> よろしくお願いします！</p>
-				</div>
-
-				<div id="englishBioTranslation" style="font-size: 14pt; display: none;">
-					<p> Good morning!</p>
-					<p> My name is Gabriel, and I am 21 years old and Portuguese. I'm in the fourth year of university
-						and studying at IST.
-						I was born in Coimbra and live in a small village near it. I live with my parents and siblings.
-					</p>
-					<p> My favorite food is ramen, my favorite sport is volleyball, and my favorite movie is A Silent
-						Voice. That movie is very beautiful and its the best one.</p>
-					<p> Two years ago, I started studying Japanese by myself. I study Japanese for 30 minutes every day.
-						It's a little difficult, but I'll do my best every day. I love Japan,
-						so that's why my dream is to work there.</p>
-					<p> Nice to meet you!</p>
-				</div>
-
-				<section id="intro" style="height: 0;">
-					<div class="container-mid">
-						<div class="animation-container animation-fade-right" data-animation-delay="200"
-							style="margin-top: 10pt;">
-							<a onclick="changeHobbieLang()">See Translation<div class="circle"><i
-										class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right"
-										aria-hidden="true"></i></div></a>
-						</div>
+				<div class="jpnBioContainer scroll-animated">
+					<div class="langBioSwitch">
+						<p>
+							<a id="jpnBtn" onclick="changeHobbieLang('jpn')">Japanese</a>
+							|
+							<a id="engBtn" onclick="changeHobbieLang('eng')">English</a>
+						</p>
 					</div>
-				</section>
+					<div id="japaneseBio" style="font-size: 14pt; display: block;">
+						<p> おはようございます！</p>
+						<p> ガブリエルと言います, そして二十一歳で、ポルトガル人です。今大学四年生で、ISTで勉強します。コインブラに生まれまして、そこの近くの小さな村に住んでいます。ご両親と兄弟に住んでいます。
+						</p>
+						<p> 好きな食べ物はラーメンで好きなスポつはバレーボールです、そして好、きな映画は声の形です。その映画はとても美しい、一番映画です。</p>
+						<p> 二年前には日本語を一人で勉強はじめました。毎日、三十分に日本語を勉強します。少し難しいです、でも毎日頑張ります。日本が大好きから、僕の夢はそこで働きます。</p>
+						<p> よろしくお願いします！</p>
+					</div>
+	
+					<div id="englishBioTranslation" style="font-size: 14pt; display: none;">
+						<p> Good morning!</p>
+						<p> My name is Gabriel, and I am 21 years old and Portuguese. I'm in the fourth year of university
+							and studying at IST.
+							I was born in Coimbra and live in a small village near it. I live with my parents and siblings.
+						</p>
+						<p> My favorite food is ramen, my favorite sport is volleyball, and my favorite movie is A Silent
+							Voice. That movie is very beautiful and its the best one.</p>
+						<p> Two years ago, I started studying Japanese by myself. I study Japanese for 30 minutes every day.
+							It's a little difficult, but I'll do my best every day. I love Japan,
+							so that's why my dream is to work there.</p>
+						<p> Nice to meet you!</p>
+					</div>
+				</div>
 
 			</section>
 			<!-- /SERVICE -->
@@ -212,24 +210,24 @@
 			<!-- EXPERIENCE -->
 			<section class="smallSection" id="experience">
 				<h3 class="headline scroll-animated">Experience</h3>
-				<div class="timeContainer scroll-animated">
+				<div class="timeContainer">
 					<div class="timeline">
 						<ul>
-							<li>
+							<li class="timelineBubble">
 								<div class="timeline-content">
 									<h3 class="date">September 2017</h3>
 									<h1>Started BSc</h1>
 									<p>Started a BSc in Computer Science at Instituto Superior Técnico</p>
 								</div>
 							</li>
-							<li>
+							<li class="timelineBubble">
 								<div class="timeline-content">
 									<h3 class="date">July-August 2019</h3>
 									<h1>Skyline Internship</h1>
 									<p>Worked as System Developer, doing regression tests in C#</p>
 								</div>
 							</li>
-							<li>
+							<li class="timelineBubble">
 								<div class="timeline-content">
 									<h3 class="date">September 2019 - July 2020</h3>
 									<h1>Student Mentorship</h1>
@@ -237,7 +235,7 @@
 										their lives and helping with easing this transition</p>
 								</div>
 							</li>
-							<li>
+							<li class="timelineBubble">
 								<div class="timeline-content">
 									<h3 class="date">July 2020</h3>
 									<h1>Finished BSc</h1>
@@ -245,7 +243,7 @@
 										Técnico</p>
 								</div>
 							</li>
-							<li>
+							<li class="timelineBubble">
 								<div class="timeline-content">
 									<h3 class="date">July-August 2020</h3>
 									<h1>Skyline Internship</h1>
@@ -253,7 +251,7 @@
 										development and maintenance</p>
 								</div>
 							</li>
-							<li>
+							<li class="timelineBubble">
 								<div class="timeline-content">
 									<h3 class="date">September 2020</h3>
 									<h1>Started MSc</h1>
