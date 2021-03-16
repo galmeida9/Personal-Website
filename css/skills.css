@@ -3,23 +3,24 @@
     grid-column-gap: 24px;
     grid-row-gap: 24px;
     grid-template-columns: repeat(auto-fit, minmax(100pt, 1fr));
+    pointer-events: none;
 }
 
 .skillGrid img {
-    width: 100pt;
+    width: 80pt;
 }
 
 @media (max-width: 768px) {
     .skillGrid {
         display: grid;
-        grid-column-gap: 60px;
+        grid-column-gap: 40px;
         grid-row-gap: 24px;
-        grid-template-columns: repeat(auto-fit, minmax(80pt, max-content));
+        grid-template-columns: repeat(auto-fit, minmax(50pt, max-content));
         justify-content: center;
     }
     
     .skillGrid img {
-        width: 80pt;
+        width: 50pt;
     }
 }
 
